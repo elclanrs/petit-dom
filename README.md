@@ -80,7 +80,7 @@ props are tested for shallow equality).
 
 ## Custom components
 
-Besides HTML/SVG tag names, fragments and render fucntions, the `h` function also accepts any object
+Besides HTML/SVG tag names, fragments and render functions, the `h` function also accepts any object
 with the following signature
 
 ```js
@@ -93,11 +93,11 @@ with the following signature
 
 Each of the 3 functions will be called by the library at the moment suggested by its name.
 
-The `self` argument which is an aboject holding the following properties:
+The `self` argument is an object holding the following properties:
 
 - `render(...)`: To create/update DOM content for the component
 - `props`: the current props passed to the JSX element (or `h` function)
-- `oldProps`: the previous props, it's value is `undefined` inside `mount`
+- `oldProps`: the previous props, its value is `undefined` inside `mount`
 
 You can also attach arbitrary properties to the object, they will persist between different
 invocations.
